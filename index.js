@@ -1,14 +1,6 @@
-console.log("Gerenciador Financeiro");
+/* link para documentação: https://nodejs.org/docs/latest-v8.x/api/synopsis.html */
+var http = require('http');
 
-var client = "Cesar Szpak";
-
-console.log("Cliente: " + client);
-
-var valProduct = 100;
-var valDiscount = 37;
-
-var discountFunc = require("./modules/calDiscount");
-
-var finalValue = discountFunc(valProduct, valDiscount);
-
-console.log("Valor final do produto R$ " + finalValue);
+http.createServer(function(req, res){
+    res.end("Gerenciador Financeiro");
+}).listen(8080);
