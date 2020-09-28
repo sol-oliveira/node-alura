@@ -7,11 +7,11 @@ const express = require("express");
 const app = express();
 
 app.get("/", function(req, res){
-    res.send("Gerenciador Financeiro");
+    res.sendFile(__dirname+ "/src/index.html");
 });
 
 app.get("/sobre-empresa", function(req, res){
-    res.send("Pagina sobre empresas");
+    res.sendFile(__dirname+ "/src/sobre-empresa.html");
 });
 
 app.get("/blog", function(req, res){
