@@ -1,5 +1,6 @@
 /* link para documentação Node: https://nodejs.org/docs/latest-v8.x/api/synopsis.html 
    link para documentação Express https://expressjs.com/pt-br/
+   link para documentação Ndemon: https://nodemon.io/
 */
 const express = require("express");
 
@@ -10,7 +11,7 @@ app.get("/", function(req, res){
 });
 
 app.get("/sobre-empresa", function(req, res){
-    res.send("Pagina sobre empresa");
+    res.send("Pagina sobre empresas");
 });
 
 app.get("/blog", function(req, res){
